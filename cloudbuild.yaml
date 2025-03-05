@@ -1,7 +1,7 @@
 steps:
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '--platform', 'linux/amd64', '-t', 'gcr.io/$eng-node-452414-f4/telegram-bot', '.']
+  args: ['build', '--platform', 'linux/amd64', '-t', 'gcr.io/eng-node-452414-f4/telegram-bot', '.']
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['push', 'gcr.io/$eng-node-452414-f4/telegram-bot']
+  args: ['push', 'gcr.io/eng-node-452414-f4/telegram-bot']
 images:
-- 'gcr.io/$eng-node-452414-f4/telegram-bot'
+- 'gcr.io/eng-node-452414-f4/telegram-bot'
